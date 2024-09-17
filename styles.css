@@ -83,11 +83,19 @@ body {
     background-color: #6a1b9a;
 }
 
-.testimonial.dark {
+.testimonial.dark-blue {
     background-color: #263238;
+    grid-column: span 2;
+    grid-row: 2 / 3;
+    align-self: end;
 }
 
-.testimonial.light {
+.testimonial.dark {
+    background-color: #1b1b1b;
+    grid-column: span 2;
+}
+
+.testimonial.light-blue {
     background-color: #ffffff;
     color: #333;
 }
@@ -107,6 +115,11 @@ body {
 
   .testimonial.light.stretched {
     padding: 30px;
+    background-color: #ffffff;
+    color:#333;
+    margin-left: auto;
+    width: 100%;
+    grid-column: 4 / 5;
   }
   
   .testimonial.light.stretched .header {
