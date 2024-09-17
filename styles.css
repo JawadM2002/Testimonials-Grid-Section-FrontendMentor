@@ -81,21 +81,20 @@ body {
 
 .testimonial.purple {
     background-color: #6a1b9a;
+    grid-column: span 2;
 }
 
 .testimonial.dark-blue {
     background-color: #263238;
     grid-column: span 2;
-    grid-row: 2 / 3;
     align-self: end;
 }
 
 .testimonial.dark {
     background-color: #1b1b1b;
-    grid-column: span 2;
 }
 
-.testimonial.light-blue {
+.testimonial.white {
     background-color: #ffffff;
     color: #333;
 }
@@ -132,12 +131,8 @@ body {
   }
 
 .attribution {
-    position: fixed;
-    bottom: 20px;
-    left: 35%;
+    margin-top: 20px;
     text-align: center;
-    transform: translateX(-50%);
-    z-index: 1;
 }
 
 @media screen and (max-width: 375px) {
