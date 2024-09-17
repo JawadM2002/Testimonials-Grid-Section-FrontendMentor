@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.quotation {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.testimonial {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: relative;
+}
+
+.testimonial .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.testimonial .header h2.name {
+    font-weight: bold;
+  }  
+
+.testimonial .header p.title {
+    font-size: 0.9em;
+    color: #d1d1d1;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.testimonial .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.testimonial .header .name {
+    font-weight: bold;
+}
+
+.testimonial .header .title {
+    font-size: 0.9em;
+    color: #d1d1d1;
+}
+
+.testimonial .quote {
+    font-size: 2em;
+    opacity: 0.2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.testimonial.purple {
+    background-color: #6a1b9a;
+}
+
+.testimonial.dark {
+    background-color: #263238;
+}
+
+.testimonial.light {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.testimonial.light .header .title {
+    color: #666;
+}
+
+.testimonial.stretched {
+    grid-row: span 2;
+}
+
+.testimonial-title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .testimonial.light.stretched {
+    padding: 30px;
+  }
+  
+  .testimonial.light.stretched .header {
+    margin-bottom: 20px;
+  }
+  
+  .testimonial.light.stretched p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+.attribution {
+    position: fixed;
+    bottom: 20px;
+    left: 35%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial {
+        width: 100%;
+    }
+}
